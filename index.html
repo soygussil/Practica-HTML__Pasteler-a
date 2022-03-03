@@ -1,60 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería Chio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/187df91767.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-<div>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
-    <label for="" class="logo">Pastelería Chio </label>
-    <ul>
-        <li><a class='active' href="#">Inicio</a></li>
-        <li><a href="#">Pasteles</a></li>
-        <li><a href="#">Crea tu propio pastel</a></li>
-        <li><a href="#">Acerca de nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</div>
-    </nav>
-    <!-- Termina nav -->
+    <header>
+        <div class="logo">
+            <p>Pastelería Chio <i class="lni lni-cake"></i> </p>
 
-    <div class="hero">
-        <div class="banner-info">
-            <h2 class="banner__title">Pasteles de todo tipo</h2>
-            <p class="banner__p">Contamos con gran variedad de pasteles, diferentes sabores
-                y sabores que no encontraras en ningún lugar de nuestro país.</p>
-            </p>
-            <img src="assets/img/Pasteleria_Chio.png" alt="">
         </div>
-    </div>
+        <!-- <img class='logo' src="assets/img/logo.png" alt="logo"> -->
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#pasteles">Pasteles</a></li>
+                <li><a href="#Crear">Crea tu Pastel</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#pastelero">Pastelero</a></li>
 
-    
 
 
+            </ul>
+        </nav>
+        <a href="#contactanos" class="cta"><button>Contactanos</button></a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1 class="hero-title">
+                Pastelería Chio
+            </h1>
+
+            <h2 class="hero-subtitle">
+                Descubre los mejores pasteles del Pais
+            </h2>
+            <p class="hero-parrafo">Disfruta y ven a degustar de los mejores pasteles, los más esquisitos que puedas
+                encontrar, contamos con amplia variedad.</p>
+
+            <button type="button" class="hero-button" onclick="location.href='#'">
+                Nuestros Pasteles &raquo;
+            </button>
+
+        </div>
+
+    </section>
+    <!-- termina hero -->
+
+    <!-- Empieza información -->
+    <section>
+        <div class="pasteles__info" id="nosotros">
+            <div class="titulo__info">
+                <h2 class="title_info">
+                    ¡Conocenos!
+                </h2>
+            </div>
+            <div class="parent">
+                <div class='text-info'>
+                    <h3 class='subtitulo_informacion'>Contamos con amplia variedad de pasteles</h3>
+                    <p class="parrafo_informacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eaque
+                        odit iusto amet nostrum error
+                        nihil ratione dolore culpa facere atque illo odio? Ex mollitia libero quisquam quae quia
+                        molestias?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo aliquid in placeat
+                        reiciendis atque corrupti dolore tempora nemo at. Amet adipisci soluta dolores deserunt
+                        distinctio doloribus recusandae aspernatur quia.
+                        Beatae, unde hic saepe cumque molestias consequatur expedita, nobis aliquid commodi
+                        reprehenderit omnis reiciendis temporibus vel minus sequi qui illo nemo? Suscipit excepturi
+                        totam est eum. Numquam quidem consectetur cupiditate.
+
+                    </p>
+
+                </div>
+                <div><img src="assets/img/Pastel1 (1).jpg" alt=""></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Termina información -->
+
+    <section>
+        <div class="titulo__info">
+            <h2 class="title_info">
+                Nuestros Pasteles
+            </h2>
+            <div class="par_info">
+                <p>Contamos con un amplio catalogo de pasteles</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni odio magnam reprehenderit beatae
+                    repellat, veniam optio libero exercitationem impedit a obcaecati esse repudiandae qui laboriosam in
+                    blanditiis, eaque dignissimos molestias!</p>
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="cards">
+                <div class="imagen_card">
+                    <img src="assets/img/Pastel1 (2).jpg" alt="pastel">
+                </div>
+                <h3 class="titulo__card">Pastel Chocolate Especial</h3>
+                <p class="info__card">Chocolate con varios ingredientes Extras</p>
+                <p class="card__precio">$280.00</p>
+            </div>
+
+            <div class="cards">
+                <div class="imagen_card">
+                    <img src="assets/img/Pastel1 (2).jpg" alt="pastel">
+                </div>
+                <h3 class="titulo__card">Pastel Chocolate Especial</h3>
+                <p class="info__card">Chocolate con varios ingredientes Extras</p>
+                <p class="card__precio">$280.00</p>
+            </div>
+
+            <div class="cards">
+                <div class="imagen_card">
+                    <img src="assets/img/Pastel1 (2).jpg" alt="pastel">
+                </div>
+                <h3 class="titulo__card">Pastel Chocolate Especial</h3>
+                <p class="info__card">Chocolate con varios ingredientes Extras</p>
+                <p class="card__precio">$280.00</p>
+            </div>
+
+            <div class="cards">
+                <div class="imagen_card">
+                    <img src="assets/img/Pastel1 (2).jpg" alt="pastel">
+                </div>
+                <h3 class="titulo__card">Pastel Chocolate Especial</h3>
+                <p class="info__card">Chocolate con varios ingredientes Extras</p>
+                <p class="card__precio">$280.00</p>
+            </div>
+
+            <div class="cards">
+                <div class="imagen_card">
+                    <img src="assets/img/Pastel1 (2).jpg" alt="pastel">
+                </div>
+                <h3 class="titulo__card">Pastel Chocolate Especial</h3>
+                <p class="info__card">Chocolate con varios ingredientes Extras</p>
+                <p class="card__precio">$280.00</p>
+            </div>
+
+        </div>
+    </section>
+<!-- Terminan cards -->
+    <section>
+        <div class="titulo__info">
+            <h2 class="title_info">
+                Diseña tu pastel
+            </h2>
+            <div class="par_info">
+                <p>¿Necesitas un pastel?</p>
+                <p>Con nuestro sistema de diseño de pasteles, puedes tener tu propio pastel, de acuerdo a las necesidades que tengas, la cantidad que tengas, incluso escogiendo los ingredientes que tengamos disponibles.</p>
+            </div>
+            <h2>Ten el pastel de tus sueños</h2>
+
+            <div class="pastel__disenio">
+                <div class="disenio">
+                    <div class="div1">a </div>
+                    <div class="div2"> a</div>
+                    <div class="div3"> a</div>
+                    <div class="div4">a </div>
+                    </div>
+            </div>
 
 
+    </section>
 
-<section class="secciones__informacion">
 
-</section>
-<section class="secciones__informacion">
-
-</section>
-<section class="secciones__informacion">
-
-</section>
-
-    <footer>
-
-    </footer>
 </body>
+
 </html>
