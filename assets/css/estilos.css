@@ -47,7 +47,12 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: var(--secundario); 
   }
-
+.hero-parrafo{
+    color: var(--blanco);
+}
+  section p{
+    color: var(--barra);
+  }
 
 .nav__links li,
 a,
@@ -66,6 +71,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+}
+
+ul li{
+    list-style: none;
 }
 
 .logo {
@@ -441,3 +450,28 @@ select{
 .right{
 	padding: 25px 40px;
 }
+
+footer p{
+    color: var(--blanco);
+}
+
+.pastelero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / NaN / NaN; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+    .form-group{
+        margin-top: 20px;
+        justify-items: auto;
+    }
+
+   .pastel__img img{
+       width: 50%;
+         height: 50%;
+   } 
